@@ -1,4 +1,4 @@
-// src/LoginForm.js
+// src/components/LoginForm.js
 import React from 'react';
 
 const LoginForm = () => {
