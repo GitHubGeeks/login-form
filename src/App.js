@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import './App.css'; // This imports default CSS styling
 
+import LoginForm from './components/LoginForm';
+import Navigation from './components/Navigation';
+
+// Main App component
 function App() {
   return (
+    // Container for the entire application
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Include the Navigation component */}
+      <Navigation />
+      {/* Include the LoginForm component */}
+      <LoginForm />
     </div>
   );
 }
